@@ -3,16 +3,7 @@ This is a model for Optical Character Recognition based on [CRNN-arhitecture](ht
 
 ## Dataset 
 
-Vintext dataset
-
-Number of Samples: 500,000 VIN entries
-Type of Data: Text 
-Average VIN Length: 17 characters
-Number of Unique Manufacturers: ~500
-Fields per Entry: 10 (e.g., VIN, Make, Model, Year, Body Style, Engine Type)
-Classes: Manufacturers (Ford, Toyota, Honda, etc.)
-Languages: English
-File Format: CSV
+Visual Geometry Group Text recognition dataset
 
 ## Requirement
 
