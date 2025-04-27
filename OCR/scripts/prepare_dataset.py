@@ -6,13 +6,11 @@ import cv2
 import os
 import argparse
 
-
 def numbers2coords(list_of_numbers):
     """Convert list of numbers to list of tuple coords x, y."""
     bbox = [[int(list_of_numbers[i]), int(list_of_numbers[i+1])]
             for i in range(0, len(list_of_numbers), 2)]
     return np.array(bbox)
-
 
 def upscale_bbox(bbox, upscale_x=1, upscale_y=1):
     """Increase size of the bbox."""
@@ -27,7 +25,6 @@ def upscale_bbox(bbox, upscale_x=1, upscale_y=1):
     x_max = bbox[2] + int(x_change/2)
     y_max = bbox[3] + int(y_change/2)
     return x_min, y_min, x_max, y_max
-
 
 def polygon2bbox(polygon):
     x_min = np.inf
@@ -96,7 +93,6 @@ def is_save_crop(remove_turned_crops, crop):
         return False
 
     return True
-
 
 def make_large_bbox_dataset(
     input_coco_json, image_root, class_names, bbox_scale_x, bbox_scale_y,
