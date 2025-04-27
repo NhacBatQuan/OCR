@@ -11,4 +11,3 @@ Pillow==8.4.0
 onnxruntime==1.13.1
 openvino==2022.2.0
 albumentations==1.1.0
-ctcdecode @ git+https://github.com/parlance/ctcdecode
