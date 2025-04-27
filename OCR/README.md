@@ -8,5 +8,5 @@ Visual Geometry Group Text recognition dataset
 ## Requirement
 
 Nvidia drivers >= 470, CUDA >= 11.4
-Docker, nvidia-docker
+Nvidia-docker
 
