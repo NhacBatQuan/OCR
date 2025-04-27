@@ -9,8 +9,6 @@ CTC_BLANK = '<BLANK>'
 
 
 def get_char_map(alphabet):
-    """Make from string alphabet character2int dict.
-    Add BLANK char fro CTC loss and OOV char for out of vocabulary symbols."""
     char_map = {value: idx + 2 for (idx, value) in enumerate(alphabet)}
     char_map[CTC_BLANK] = 0
     char_map[OOV_TOKEN] = 1
@@ -18,8 +16,6 @@ def get_char_map(alphabet):
 
 
 class Tokenizer:
-    """Class for encoding and decoding string word to sequence of int
-    (and vice versa) using alphabet."""
 
     def __init__(self, alphabet):
         self.char_map = get_char_map(alphabet)
